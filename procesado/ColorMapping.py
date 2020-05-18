@@ -8,16 +8,23 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img=cv2.imread(r"C:\Users\Frodo\Downloads\mascarilla.jpg")
+'''LEER IMAGEN'''
+img=cv2.imread(r"C:\Users\Frodo\eclipse-workspace\DATA\00-puppy.jpg")
 plt.imshow(img)
 plt.show()
 
-# pasar a RGB
+'''BGR 2 RGB'''
 img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 plt.imshow(img)
 plt.show()
 
-# pasar a HSV
-img=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+'''RGB 2 HSV'''
+img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 plt.imshow(img)
+plt.show()
+
+'''BGR 2 GRAY '''
+img=cv2.imread(r"C:\Users\Frodo\eclipse-workspace\DATA\00-puppy.jpg")
+img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+plt.imshow(img, cmap='gray')
 plt.show()

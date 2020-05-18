@@ -5,8 +5,8 @@ Created on 12 may. 2020
 '''
 
 import cv2
-img = cv2.imread(r"C:\Users\Frodo\Downloads\mascarilla.jpg")
-cv2.imshow('Mascarilla',img)
+img = cv2.imread(r"C:\Users\Frodo\eclipse-workspace\DATA\00-puppy.jpg")
+cv2.imshow('puppy',img)
 
 # tecla para poder cerrar la ventana
 cv2.waitKey()
